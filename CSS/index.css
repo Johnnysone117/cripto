@@ -1,0 +1,322 @@
+:root{
+    --blanco:#fff;
+    --negro:#000;
+    --rojo: #ff0000;
+    --nevegacion: rgba(0,22,43,255);
+    --fuenteprincipal: "Staatliches", sans-serif; 
+   --body: rgba(211,219,222,255)
+
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body{
+    background-color: var(--blanco);
+    font-size: 1.6rem;
+    line-height: 1.5;
+
+  }
+
+
+li{
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--negro);
+}
+
+p{
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--negro);
+}
+  
+/* los link no tendran la linea*/
+ 
+ a{
+    text-decoration: none;
+ }
+
+ h2,h3{
+    text-align: center;
+    color: var(--negro);
+    font-family:var(--fuenteprincipal) ;
+}
+h1{
+    color: var(--blanco);
+    font-size: 5rem;
+}
+h2{
+    font-size: 4.2rem;
+}
+h3{
+   font-size: 3.4rem; 
+}
+header{
+    background-color: var(--nevegacion);
+    display: flex;
+    height: auto;
+    justify-content: center;
+
+  
+    
+    
+ }
+
+ 
+ .foto1{
+    display: flex;  
+   justify-content:space-between;
+   align-items: center;
+
+}
+.foto1 img{
+    width: 15rem;
+   border-radius: 50%;
+   
+}
+.boton{
+    font-family: var(--fuenteprincipal);
+    background-color: var(--rojo);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 100%;
+    text-align: center;
+    border: none;
+
+}
+@media (min-width: 768px) {
+    .boton{
+        width:auto ;
+    }
+    
+}  
+.boton:hover{
+   cursor: pointer;
+}
+
+.hola0{
+    background-color:var(--blanco) ;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color{
+    background-color: black;
+}
+/*
+@media (min-width: 768px) {
+    .hola{
+        background-color: var(--body);
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        
+    
+    }
+    
+    .holaimg{
+        max-width: 300px;
+        height: auto;
+        margin: 2rem;
+       
+    }
+    
+
+    
+}
+*/
+/* Estilo por defecto: Elementos en columnas (vertical) */
+
+.sombra1 {
+    background-color: var(--body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+   
+}
+.hola0{
+    background-color: lightblue;
+}
+
+.hola, .holaimg {
+    width: 100%; /* Ambos elementos ocupan el ancho completo */
+    text-align: center; /* Opcional: Centra el texto */
+    background-color: lightblue;
+    
+}
+
+.holaimg {
+    margin-top: 20px; /* Espacio entre el texto y la imagen */
+}
+
+/* En pantallas más grandes (mínimo 768px), cambia a diseño horizontal */
+@media (min-width: 768px) {
+    .sombra1 {
+        
+        flex-direction: row; /* Cambia la dirección del flexbox a fila (horizontal) */
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: lightblue;
+
+    }
+
+    .hola {
+        width: 50%; /* El texto ocupa la mitad del ancho */
+    }
+
+    .holaimg {
+        width: 300px; /* La imagen ocupa el 40% del ancho */
+        height: auto;
+        margin-top: 0; /* Elimina el margen superior para alinearlo */
+    }
+}
+
+
+
+
+@media (min-width:768px) {
+  
+   
+    .fotos{
+        display: flex;
+        justify-content: space-between;
+      
+    }
+
+    .foto{
+    max-width:400px;
+    height: auto;
+    margin: 2rem;
+    }
+    
+}
+
+
+.prueba{
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-direction: column; /* Muestra los elementos en una columna */
+    gap: 20px; /* Espacio entre elementos */
+    align-items: center;
+
+}
+
+
+.foto{
+    max-width:400px;
+    height: auto;
+    margin: 2rem;
+    }
+
+
+
+
+
+.sombra{
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    background-color:lightblue;
+    padding: 2rem;
+   
+}
+
+.centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.iframe-container {
+    position: relative; /* Necesario para el posicionamiento del iframe */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+    max-width: 800px; /* Ancho máximo que desees */
+    margin: 10px auto; /* Centra el contenedor en la página */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+    padding-top: 26.25%; /* Proporción 16:9 (altura 56.25% del ancho) */
+}
+
+iframe {
+    position: absolute; /* Posiciona el iframe dentro del contenedor */
+    top: 0;
+    left: 0;
+    width: 100%; /* Asegura que el iframe ocupe el 100% del contenedor */
+    height: 100%; /* Asegura que el iframe ocupe el 100% del contenedor */
+    border: none; /* Opcional: elimina el borde del iframe */
+}
+
+
+
+
+
+.footer_fin {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-direction: column; /* Muestra los elementos en una columna */
+    gap: 20px; /* Espacio entre elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+    
+
+footer {
+    text-align: center;
+    width: 100%; /* Asegura que el pie de página ocupe todo el ancho */
+}
+
+@media (min-width: 768px) {
+    .footer_fin {
+        flex-direction: row; /* Cambia a fila en pantallas grandes */
+        flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas */
+        justify-content: center; /* Centra los elementos en el contenedor */
+    }
+    
+    .contact-item {
+        flex: 0 0 calc(50% - 10px); /* Dos columnas con espacio entre ellas */
+        display: flex; /* Usar flex para alinear el texto e icono */
+        align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        width: calc(50% - 10px); /* Asegura que cada columna ocupe la mitad del espacio */
+        text-align: center; /* Asegura que el texto esté centrado */
+    }
+    
+    .icono {
+        margin-left: 10px; /* Espacio entre el texto y el icono */
+    }
+}
+.cripto{
+    
+        background-color: lightblue; /* Cambia 'lightblue' por el color que desees */
+        padding: 10px; /* Espacio alrededor del texto, opcional */
+        border-radius: 5px; /* Bordes redondeados, opcional */
+
+    
+}
+
+.llaveig {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna (primero el texto, luego la imagen) */
+    justify-content: center; /* Centra los elementos verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la ventana */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.llaveimg {
+    width: 50%; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
